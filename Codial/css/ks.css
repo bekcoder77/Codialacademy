@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pathway+Gothic+One&family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins";
+  user-select: none;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+.container .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+}
+.container .nav .links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  font-size: 16px;
+}
+.container .header {
+  display: flex;
+  margin-top: 100px;
+  position: relative;
+}
+.container .header .header-info {
+  margin-left: 80px;
+}
+.container .header .header-info h1 {
+  margin-top: 60px;
+  width: 500px;
+  font-size: 50px;
+  color: #1D537C;
+  line-height: 60px;
+  font-weight: 600;
+}
+.container .header .header-info p {
+  margin-top: 20px;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.container .header .header-info .btn {
+  padding: 12px 55px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 18px;
+  border: none;
+  background-color: #1D537C;
+  color: white;
+}
+.container .header .header-video {
+  padding: 20px 40px;
+}
+.container .header .header-video iframe {
+  width: 600px;
+  height: 400px;
+}
+.container .title {
+  padding: 30px 80px;
+}
+.container .title h1 {
+  font-size: 50px;
+  color: #1D537C;
+  width: 600px;
+}
+.container .main-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 80px;
+}
+.container .main-cards .main-card {
+  padding: 40px 0;
+  width: 400px;
+}
+.container .main-cards .main-card .card-t {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.container .main-cards .main-card p {
+  width: 250px;
+  line-height: 30px;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.container .about-codial {
+  display: flex;
+  gap: 80px;
+  padding: 50px 80px;
+}
+.container .about-codial .about-t h3 {
+  width: 500px;
+  line-height: 30px;
+  font-size: 22px;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+.container .about-codial .about-t p {
+  padding: 15px 0px;
+  font-size: 22px;
+  line-height: 30px;
+}
+.container .about-codial .about-t p i {
+  background-color: #1D537C;
+  text-align: center;
+  color: #FF9D00;
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+  .container .nav {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .container .header {
+    flex-wrap: wrap;
+  }
+  .container .header .header-info h1 {
+    font-size: 42px;
+  }
+  .container .header .header-info p {
+    font-size: 24px;
+  }
+  .container .header .header-info .btn {
+    padding: 10px 30px;
+  }
+  .container .header .header-info .btn {
+    transition: all 0.5s ease-in-out;
+  }
+  .container .header .header-info .btn:hover {
+    background-image: linear-gradient(#ff9d00, #ff9d00);
+    color: white;
+  }
+  .container .title h1 {
+    font-size: 30px;
+    width: 300px;
+  }
+  .container .main .main-card {
+    width: 200px;
+  }
+  .container .main .card-t h1 {
+    font-size: 24px;
+  }
+  .container .about-codial .about-i img {
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 30px;
+    margin-top: 30px;
+  }
+  .container .about-codial .about-t h3 {
+    width: 300px;
+  }
+  .container .about-codial .about-t p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .container .nav {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .container .nav .links {
+    display: none;
+  }
+  .container .header {
+    flex-wrap: wrap;
+  }
+  .container .header .header-info h1 {
+    font-size: 42px;
+  }
+  .container .header .header-info p {
+    font-size: 16px;
+  }
+  .container .header .header-info .btn {
+    padding: 10px 30px;
+  }
+  .container .title h1 {
+    font-size: 30px;
+    width: 300px;
+  }
+  .container .main .card-t h1 {
+    font-size: 30px;
+  }
+  .container .about-codial {
+    flex-wrap: wrap;
+  }
+  .container .about-codial .about-i img {
+    width: 280px;
+  }
+  .container .about-codial .about-t h3 {
+    width: 300px;
+  }
+  .container .about-codial .about-t p {
+    font-size: 14px;
+    width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .container .nav {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .container .nav .links {
+    display: none;
+  }
+  .container .header {
+    flex-wrap: wrap;
+  }
+  .container .header .header-info h1 {
+    font-size: 42px;
+  }
+  .container .header .header-info p {
+    font-size: 16px;
+  }
+  .container .header .header-info .btn {
+    padding: 10px 30px;
+  }
+  .container .title h1 {
+    font-size: 30px;
+    width: 300px;
+  }
+  .container .main .main-cards {
+    flex-direction: column;
+    width: 300px;
+  }
+  .container .main .card-t {
+    width: 300px;
+  }
+  .container .main .card-t h1 {
+    font-size: 30px;
+  }
+  .container .about-codial {
+    flex-wrap: wrap;
+  }
+  .container .about-codial .about-i img {
+    width: 480px;
+  }
+  .container .about-codial .about-t h3 {
+    width: 450px;
+  }
+  .container .about-codial .about-t p {
+    font-size: 18px;
+    width: 400px;
+  }
+}
+@media (max-width: 588px) {
+  .container {
+    width: 100%;
+  }
+  .container .about-codial {
+    flex-wrap: wrap;
+  }
+  .container .about-codial .about-i img {
+    width: 380px;
+  }
+  .container .about-codial .about-t h3 {
+    width: 380px;
+  }
+  .container .about-codial .about-t p {
+    font-size: 16px;
+    width: 380px;
+  }
+}
+@media (max-width: 447px) {
+  .container {
+    width: 100%;
+  }
+  .container .nav {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .container .nav .links {
+    display: none;
+  }
+  .container .header {
+    flex-wrap: wrap;
+  }
+  .container .header .header-info h1 {
+    font-size: 42px;
+    width: 200px;
+  }
+  .container .header .header-info p {
+    font-size: 16px;
+  }
+  .container .header .header-info .btn {
+    padding: 10px 30px;
+  }
+  .container .header .header-video .video {
+    width: 300px;
+    height: 250px;
+    margin: 0 auto;
+  }
+  .container .title h1 {
+    font-size: 30px;
+    width: 300px;
+  }
+  .container .main .card-t h1 {
+    font-size: 30px;
+  }
+  .container .about-codial {
+    flex-wrap: wrap;
+  }
+  .container .about-codial .about-i img {
+    width: 280px;
+  }
+  .container .about-codial .about-t h3 {
+    width: 300px;
+  }
+  .container .about-codial .about-t p {
+    font-size: 14px;
+    width: 300px;
+  }
+}/*# sourceMappingURL=ks.css.map */
